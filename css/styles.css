@@ -31,11 +31,12 @@ img {
   display: block;
 }
 .container {
-  width: 100%;
-  min-width: 320px;
   max-width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
   /* max-width: 1158px; */
-  padding: 0 15px;
   /* margin: 0 auto; */
 }
 
@@ -423,8 +424,9 @@ link {
 .customer {
   display: flex;
   flex-wrap: wrap;
-   column-gap: 16px;
+  column-gap: 16px;
   row-gap: 72px;
+  justify-content: center;
   /* gap: 24px; */
 }
 .customer-item {
