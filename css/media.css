@@ -1,0 +1,135 @@
+@media screen and (min-width: 396px) {
+  .container {
+    max-width: 428px;
+  }
+  /* section 2 */
+.priorities-icon {
+        display: none;
+      }
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 736px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1128px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* section 2 */
+
+  .priorities-section {
+    padding: 120px 0;
+  }
+
+  .priorities-sectionul {
+    gap: 24px;
+  }
+
+  .priorities-list {
+    width: calc((100% - 72px) / 4);
+  }
+  .priorities-section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+
+  .priorites-block {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* section 3 */
+  .do-section .list {
+    list-style: none;
+  }
+  .do-sectionul {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  .do-section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--accentcolor);
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .do-section {
+    padding-bottom: 120px;
+  }
+  .doing-photo {
+    width: calc((100% - 48px) / 3);
+  }
+  /* section 4 */
+  .team-section {
+    padding: 120px 0;
+  }
+  .team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-section-card {
+    width: calc((100% - 72px) / 4);
+  }
+  /* section 5 */
+  .customer-section {
+    padding: 120px 0;
+  }
+  .customer {
+    gap: 24px;
+  }
+  .customer-item {
+    width: calc((100% - 120px) / 6);
+  }
+ /* footer */
+
+ .footeer-logo {
+    margin-bottom: 16px;
+ }
+.footer-container {
+    align-items: baseline;
+}
+.logo-foot {
+    margin-right: 120px;
+}
+.footer-media {
+    margin-right: auto;
+}
+.footer-form {
+    gap: 24px;
+}
+.sub-input {
+    width: 264px;
+}
+.input-btn {
+    min-width: 165px;
+}
+
+
+}

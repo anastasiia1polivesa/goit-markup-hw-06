@@ -31,7 +31,8 @@ img {
   display: block;
 }
 .container {
-  max-width: 428px;
+  width: 100%;
+  /* max-width: 428px; */
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -41,7 +42,7 @@ img {
 }
 
 /* HEADER */
-.nav {
+/* .nav {
   display: flex;
   align-items: center;
 }
@@ -156,7 +157,7 @@ link {
 .header-address-link:hover,
 .header-address-link:focus {
   color: #404bbf;
-}
+} */
 
 /* section 1 */
 
@@ -218,7 +219,7 @@ link {
 
 .priorities-sectionul {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 72px;
   /* gap: 24px; */
 }
@@ -237,6 +238,7 @@ link {
 }
 .priorities-list {
   width: 100%;
+  position: relative;
   /* width: calc((100% - 72px) / 4); */
 }
 .priorities-section-subtitle {
@@ -268,9 +270,7 @@ link {
   align-items: center;
   justify-content: center;
 } */
-.priorities-icon {
-  display: none;
-}
+
 .priorities-section-text {
   font-size: 16px;
   line-height: 1.5;
@@ -460,7 +460,7 @@ link {
 
 .footer {
   background-color: var(--accentcolor);
-  padding: 100px 0;
+  padding: 96px 0;
 
 }
 
@@ -483,7 +483,7 @@ link {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   /* align-items: baseline; */
 }
@@ -500,6 +500,8 @@ link {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
 }
 .footer-block-icons {
   display: flex;
@@ -525,7 +527,7 @@ link {
   fill: #f4f4fd;
 }
 .footer-media {
-  margin-right: auto;
+  /* margin-right: auto; */
   margin-bottom: 72px;
 }
 
@@ -537,10 +539,13 @@ link {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
 }
 .footer-form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   /* gap: 24px; */
   gap: 16px;
 }
@@ -757,10 +762,11 @@ link {
   color: var(--maincolor);
   text-decoration: none;
   list-style-type: none;
-  display: inline-block;
+  display: flex;
 }
 .footer-logo {
   margin-bottom: 16px;
+  justify-content: center;
 }
 .footer-logo-accent,
 span {
