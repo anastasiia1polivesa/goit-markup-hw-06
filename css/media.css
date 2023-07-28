@@ -9,19 +9,226 @@
   .header-menu {
     display: none;
   }
-  .header-address {
+  .header-address-list {
     display: none;
   }
-  
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .section {
+          background-image: linear-gradient(
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/images2x/Dark-bg-mob-2x.jpg);
+      }
+}
+  .footer-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footeer-logo {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+
+  /* header */
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav {
+    display: flex;
+  }
+  .header-menu {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .header-address-list {
+    display: block;
+  }
+  .header-menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--accentcolor);
+    text-decoration: none;
+    padding: 24px 0;
+  }
+  link {
+    text-decoration: none;
+  }
+  .menu-open-btn {
+    display: none;
+  }
+
+  .header-menu-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    color: #404bbf;
+  }
+  .current {
+    position: relative;
+  }
+
+  .current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    bottom: -1px;
+  }
+  .light-text {
+    color: #404bbf;
+  }
+
+  .header-address {
+    font-style: normal;
+  }
+  .header-address-link {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--textcolor);
+    text-decoration: none;
+    display: block;
+    gap: 12px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-address-link:hover,
+  .header-address-link:focus {
+    color: #404bbf;
+  }
+  /* section 1 */
+
+  .section-title {
+    font-size: 56px;
+    max-width: 496px;
+  }
+  .backdrop .modal {
+    width: 408px;
+  }
   .section {
     max-width: 768px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--accentcolor);
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/images/bc728.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .section {
+          background-image: linear-gradient(
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/images2x/Dark-bg-tablet2x.jpg);
+      }
+}
+  /* section 2 */
+  .priorities-section {
+    display: flex;
+    padding: 96px 16px;
+  }
+
+  .priorities-sectionul {
+    gap: 24px;
+    row-gap: 72px;
+  }
+
+  .priorities-list {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .priorities-section-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+
+  /* section 4 */
+  .team-list {
+    gap: 24px;
+  }
+  /* section 5 */
+  .customer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    justify-content: center;
+  }
+  .customer-item {
+    width: calc((100% - 72px) / 3);
+  }
+
+  /* footer */
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .footer {
+    padding: 96px 0;
+  }
+
+  .footeer-logo {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  .footer-headline {
+    display: inline-flex;
+  }
+  .logo-foot {
+    margin-left: 108px;
+    margin-right: 24px;
+  }
+  .footer-media {
+    margin-right: auto;
+  }
+  .footer-form {
+    gap: 24px;
+  }
+  .subscribe-title {
+    display: inline-flex;
+  }
+  .sub-input {
+    width: 264px;
+  }
+  .input-btn {
+    min-width: 165px;
+  }
+  /* .sub-place {
+        margin-left: 108px;
+      } */
 }
 
 @media screen and (min-width: 1158px) {
@@ -74,7 +281,7 @@
     background-color: #404bbf;
     bottom: -1px;
   }
-  */ .header-menu .list {
+  .header-menu .list {
     list-style: none;
   }
   .header-menu-item {
@@ -92,16 +299,16 @@
     display: block;
   }
   link {
-  text-decoration: none;
-}
-.header-menu-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    text-decoration: none;
+  }
+  .header-menu-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.header-menu-link:hover,
-.header-menu-link:focus {
-  color: #404bbf;
-}
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    color: #404bbf;
+  }
 
   .light-text {
     color: #404bbf;
@@ -141,6 +348,17 @@
       ),
       url(../images/images/people-office1.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section {
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+              ),
+              url(../images/images2x/people-office2x.jpg);
+        }
+  }
   .section-title {
     font-size: 56px;
     max-width: 496px;
@@ -167,6 +385,7 @@
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    justify-content: flex-start;
   }
 
   .priorites-block {
@@ -238,11 +457,11 @@
   .footeer-logo {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
   }
   .footer-container {
-    align-items: baseline;
     display: flex;
+    align-items: baseline;
   }
   .footer-headline {
     display: inline-flex;
@@ -255,6 +474,7 @@
     margin-right: auto;
   }
   .footer-form {
+    display: flex;
     gap: 24px;
   }
   .subscribe-title {
@@ -265,5 +485,8 @@
   }
   .input-btn {
     min-width: 165px;
+  }
+  .backdrop .modal {
+    width: 408px;
   }
 }
