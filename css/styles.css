@@ -31,7 +31,7 @@ img {
   display: block;
 }
 .container {
-  max-width: 428px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -47,7 +47,6 @@ img {
 }
 .header-logo {
   padding: 24px 0;
-  margin-right: 76px;
 }
 
 .header-logo,
@@ -67,8 +66,7 @@ span {
   color: var(--accentcolor);
 }
 .header-logo {
-  display: flex;
-  margin-left: 16px;
+display: inline-block;
 }
 .mob-menu {
   position: fixed;
@@ -89,6 +87,8 @@ span {
   cursor: pointer;
   display: flex;
   margin-left: auto;
+  padding: 0;
+  background-color: transparent;
 }
 .menu-close-btn {
   background-color: #e7e9fc;
@@ -111,7 +111,7 @@ span {
 .mob-menu-link {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.5;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--accentcolor);
   text-decoration: none;
@@ -119,7 +119,7 @@ span {
 .mob-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 .current {
   color: #404bbf;
@@ -127,7 +127,7 @@ span {
 .mob-contacts {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
 }
 .mob-phone {
   font-size: 36px;
@@ -136,6 +136,7 @@ span {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #4d5ae5;
+  text-decoration: none;
 }
 .mob-email {
   font-size: 20px;
@@ -143,12 +144,12 @@ span {
   line-height: 1.2;
   letter-spacing: 0.4px;
   color: #434455;
+  text-decoration: none;
 }
 .mob-menu-social {
   display: flex;
   gap: 56px;
   justify-content: center;
-  margin-bottom: 20px;
 }
 .mob-social-items {
   width: 40px;
@@ -176,7 +177,7 @@ span {
   background-position: center;
   background-size: cover;
   background-color: var(--accentcolor);
-  padding: 188px 0;
+  padding: 112px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -192,7 +193,7 @@ span {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 320px;
-  margin: 0 auto 42px;
+  margin: 0 auto 72px;
 }
 .section-button {
   background-color: #4d5ae5;
@@ -222,7 +223,7 @@ span {
 /* section 2 */
 
 .priorities-section {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 
 .priorities-icon {
@@ -258,9 +259,8 @@ span {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .priorities-section-text {
   font-size: 16px;
@@ -417,7 +417,7 @@ span {
   justify-content: center;
 }
 .customer-item {
-  width: calc((100% - 72px) / 2);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 
@@ -457,9 +457,10 @@ span {
   justify-content: center;
   align-items: center;
   width: 264px;
+}
+.logo-foot {
   margin-bottom: 72px;
 }
-
 .footer-container {
   display: flex;
 }
@@ -540,7 +541,8 @@ span {
   gap: 16px;
 }
 .sub-input {
-  width: 398px;
+  width: 90vw;
+  max-width: 398px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid #ffffff;
@@ -801,6 +803,7 @@ span {
 
 .modal {
   padding: 72px 24px 24px 24px;
+  max-width: 100%;
 }
 
 .modal-title {
@@ -932,5 +935,6 @@ span {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
